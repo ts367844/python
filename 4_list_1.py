@@ -1,4 +1,4 @@
-# list
+# list 1
 # list to store your favourite destination in india
 destinations = ['Rajsthan','Ladakh','Andaman','Anini','Amarnath']
 # list to store 10 different type of values  

@@ -1,4 +1,4 @@
-# list 1
+# list 2
 random_values = ["apple",42,"python",3.14,True,"banana",7,"AI",99.9,"code"]
 print(random_values)
 # add item
