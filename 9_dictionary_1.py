@@ -5,7 +5,7 @@ print(user_data['name'])
 # update a value
 user_data['name'] = 'tushar makwana'
 # add a new values
-user_data['place'] = 'bhavnagar'
+user_data['place'] ='bhavnagar'
 user_data['pincode'] = 364001
 print(user_data)
 # delete a values
