@@ -8,5 +8,5 @@ area2 = length2 * width2
 
 if area1>area2:
     print("First farm is bigger")
-else:
+if area1<area2:
     print("Second farm is bigger")
