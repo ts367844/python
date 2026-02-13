@@ -1,3 +1,5 @@
+#multiple return values function
+
 def getResult(*values):
    
     return len(values),sum(values),sum(values)/len(values)
