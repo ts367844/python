@@ -12,5 +12,4 @@ while count<=32:
     letter.append(seeds[rd.randint(0,size)])
     count= count + 1
 password = ''.join(letter)
-
 print(password)
