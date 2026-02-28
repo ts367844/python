@@ -1,19 +1,25 @@
-#write a program to accept transfer amount from user & transfer amount. if amount>balance or greater then daily transfer limit raise custom exception 
-class TransferLimitException(Exception):
-    pass 
-balance = 987525
-daily_limit = 100000
+# example of exception handling with list 
+# write a program to calculate total and average score by team members in cricket match 
+total = 0
+scoreboard = [83, 12, 57, 4, -96, 28, 71, 39, 65, 2, 90]
+# scoreboard = [None,12, 'Rinku',57, 4, 96, 28, 71, 39, 65, 2, 90]
+# scoreboard = ['Rinku','Rohit','Kohli']
+# scoreboard = None 
+count = 0
+for runs in scoreboard:
+    try:
+        if runs<0:
+            raise ValueError('negative score is not allowed, hence value is skipped')
+        else: 
+            total = total + runs 
+            count = count + 1
+    except TypeError:        
+        print('invalid type so value is skipped')
+    except ValueError as error:
+        print(error)
 try:
-    amount = int(input("enter transaction amount"))
-    if amount>balance:
-        raise TransferLimitException("insufficient balance in your account")
-    elif amount>daily_limit:
-        raise TransferLimitException("transfer daily limit exceeded ")
-    else:
-        print("money transfer successful")
-        balance = balance - amount
-        print("remaining balance in your account ",balance)
-except TransferLimitException as error:
-    print(error)
-finally:
-    print("thank for banking with us")
+    average = total / count
+except ZeroDivisionError:
+    print("all values are invalid, so no total & average is generated")
+else:
+    print("total runs ",total," Average",average)
