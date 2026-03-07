@@ -23,5 +23,3 @@ else:
     print("total:",total,"average:",avg)
 
 
-
-    
