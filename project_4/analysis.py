@@ -9,7 +9,6 @@ data = pd.read_sql_query("SELECT * FROM expenses", conn)
 
 # Convert date
 data['date'] = pd.to_datetime(data['date'])
-
 # Monthly spending
 monthly = data.groupby(data['date'].dt.month)['amount'].sum()
 
